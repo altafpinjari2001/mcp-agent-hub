@@ -1,0 +1,17 @@
+agents:
+  data_analyst:
+    port: 8001
+    enabled: true
+  researcher:
+    port: 8002
+    enabled: true
+  code_assistant:
+    port: 8003
+    enabled: true
+
+discovery:
+  poll_interval: 60
+  endpoints:
+    - "http://localhost:8001"
+    - "http://localhost:8002"
+    - "http://localhost:8003"
